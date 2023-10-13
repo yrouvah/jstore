@@ -1,0 +1,109 @@
+.featured-product .products-list {
+  flex-wrap: wrap;
+}
+.product-item:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.product-item {
+  width: 300px;
+  margin-bottom: 30px;
+  text-align: center;
+  background-color: var(--main-color-white);
+}
+.product-item .product-image {
+  height: 400px;
+}
+.product-item .product-image img {
+  height: 100%;
+}
+.product-icon h3,
+.product-icon h4 {
+  width: 60px;
+  height: 30px;
+  background-color: green;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.product-category {
+  text-transform: uppercase;
+  color: var(--main-color-gray);
+}
+.product-details {
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+}
+.product-item .product-icon {
+  top: 25px;
+  left: 13px;
+  width: 60px;
+  height: 30px;
+  font-size: 0.8rem;
+  color: var(--main-color-white);
+}
+.product-name h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+.product-item .product-name h4 {
+  margin-bottom: 0px;
+}
+.product-item .product-price {
+  height: 30px;
+}
+.product-item .product-price del {
+  color: var(--main-color-gray);
+}
+i.selected {
+  color: var(--main-color-orange);
+}
+.product-item .product-options button {
+  border: none;
+  background-color: var(--main-color-gray);
+  color: white;
+  height: 30px;
+  font-weight: bold;
+}
+.product-item .product-options button:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+span.badge {
+  left: 10px;
+  display: block;
+  width: 40px;
+  padding: 5px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: var(--main-color-white);
+  text-transform: uppercase;
+}
+span.badge:nth-child(2) {
+  top: 10px;
+  background-color: var(--main-color-danger);
+}
+span.badge:nth-child(3) {
+  top: 40px;
+  background-color: var(--main-color-success);
+}
+
+/*********** MEDIA **********/
+@media screen and (max-width: 1200px) {
+  .new-arrivals-products .products-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 768px) {
+  .products-list {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 576px) {
+}
+@media screen and (max-width: 427px) {
+}
